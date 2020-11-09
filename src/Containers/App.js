@@ -2,6 +2,7 @@ import React from 'react';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from 'styled-components';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/styles';
+import Home from './Home/Home';
 
 function App({ isAuth, checkAuth }) {
 
@@ -23,7 +24,7 @@ function App({ isAuth, checkAuth }) {
   return (
           <MuiThemeProvider theme={theme} >  
               <ThemeProvider theme={theme} >
-                      Hellow World
+                    <Home />
               </ThemeProvider> 
           </MuiThemeProvider> 
      );
